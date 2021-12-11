@@ -1,0 +1,34 @@
+<!-- 
+  <audio>
+
+    - src
+    - controls
+    - se não funcionar?
+      - fallback content
+    - source
+      - src
+      - type
+
+    - propriedades da tag audio
+      - autoplay: depende do browser
+      - muted: depende do browser
+      - loop: reinicia o audio no final, depende do navegador
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio</title>
+  </head>
+  <body>
+    <!-- outra forma de trabalhar caso não funcione no browser -->
+    <audio controls>
+      <source src="./assets/audio.mp3" type="audio/mp3" />
+      <source src="./assets/audio.ogg" type="audio/ogg" />
+      <p>Seu navegador não suporta audio</p>
+    </audio>
+  </body>
+</html>

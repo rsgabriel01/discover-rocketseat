@@ -1,0 +1,50 @@
+<!-- 
+  <video>
+
+    - src
+    - controls
+    - se não funcionar?
+      - fallback content
+    - source
+      - src
+      - type
+
+    - sobre serviços de terceiros
+
+    - propriedades da tag video
+      - autoplay: funciona dependendo da configuração de privacidade do browser
+      - preload="auto": baixa dados antes do play
+      - preload="metadata": baixa dados basicos antes do play, exemplo duração
+      - preload="none": não carrega nada antes do play
+      - loop: reinicia o video no final, depende do navegador
+      - muted: se o video deve começar mutado, muted + autoplay funciona na maioria das vezes
+      - poster="./imagem.png": adicionar uma imagem no fundo antes do play
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+  </head>
+  <body>
+    <video
+      src="./assets/beautysalon.mp4"
+      controls
+      width="500"
+      height="300"
+      autoplay
+    >
+      <p>Este browser não suporta video, baixe-o <a href="#">aqui</a></p>
+    </video>
+
+    <!-- outra forma de trabalhar caso não funcione no browser -->
+    <video controls width="500" height="300">
+      <source src="./assets/beautysalon.mp4" type="video/mp4" />
+      <p>Este browser não suporta video, baixe-o <a href="#">aqui</a></p>
+    </video>
+  </body>
+</html>
