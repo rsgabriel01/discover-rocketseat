@@ -1,6 +1,32 @@
 <!-- 
   <input>
     Atributos comuns
+      - type
+      - autocomplete
+      - autofocus
+      - disabled
+      - value
+      - readonly (aceito por quase todos os types)
+      - form (aceito por quase todos os types)
+      - name
+      - required (aceito por quase todos os types)
+      - placeholder
  -->
 
 <input type="text" />
+
+<input type="email" autocomplete="email" />
+
+<input type="text" autofocus />
+
+<input type="text" value="Qualquer coisa - desabilitado" disabled />
+
+<input type="text" value="Outra coisa - apenas leitura" readonly />
+
+<form action="" id="meu-form"></form>
+
+<input name="email" type="email" form="meu-form" />
+
+<input type="text" required />
+
+<input type="text" placeholder="Dica sobre o dado de entrada" />
