@@ -1,0 +1,33 @@
+<!-- 
+  <textarea>
+
+  - mais de uma linha
+  - util para textos grandes
+
+  Atributos
+  - id
+  - name
+  - rows e cols
+  - maxlength e minlength
+  - wrap
+  .. outros comuns aos <input>s
+    - autocomplete, autofocus, disabled, placeholder, readonly, form, required
+  
+-->
+
+<form>
+  <label for="message">Mensagem:</label>
+  <br />
+  <textarea
+    type="textarea"
+    id="message"
+    name="message"
+    cols="30"
+    rows="30"
+    minlength="4"
+    maxlength="'255"
+    placeholder="Digite sua mensagem..."
+  ></textarea>
+  <br />
+  <button type="submit">Enviar</button>
+</form>

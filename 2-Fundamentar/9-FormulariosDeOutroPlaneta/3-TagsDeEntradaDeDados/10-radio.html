@@ -1,0 +1,29 @@
+<!-- 
+  <input type="radio">
+  
+  - Projetado para selecionar uma única opção de um grupo de opções
+
+  ATRIBUTOS ESSENCIAIS
+  - checked
+    Indica que o campo foi marcado
+  
+  - value
+    Valor que aquele campo contém
+
+
+
+-->
+
+<form>
+  <fieldset>
+    <legend>Bora tomar um café?</legend>
+    <label for="yep">Sim</label>
+    <input type="radio" id="yep" name="coffee" value="yes" />
+
+    <label for="nono">Não</label>
+    <input type="radio" id="nono" name="coffee" value="no" checked />
+  </fieldset>
+
+  <br />
+  <button type="submit">Enviar</button>
+</form>

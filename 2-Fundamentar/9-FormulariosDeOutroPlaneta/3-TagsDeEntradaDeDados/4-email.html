@@ -1,0 +1,61 @@
+<!-- 
+  <input type="email">
+    
+    - Espera que o usuário digite um email
+    - Irá validar se o valor digitado é um email
+
+    # Atributos
+      - placholder
+      - readonly
+      - value
+
+      - required
+
+      - multiple
+        * O cmapo irá receber 1 ou mais emails, separado por vírgulas
+
+      - minlength / maxlength
+        * O minimo e/ou máximo valor que o campo irá conter
+
+      - size
+        * Valor npumerico indicando quantos caracteres esse campo deveria conter, modificando o tamanho do campo para o usuário
+      
+      - pattern
+        * Uso de expressão regular para validar o campo
+        * Exemplo: o usuario só poderá colocar email do dompnio rocketseat.com.br
+          * pattern=".+@rocketseat\.com\.br"
+
+      - list 
+        * o id de uma tag <datalist> que está no mesmo documento
+        * <datalist> irá conter uma lista de valores pré-definidos a fim de sugerir ao usuário, quais valores estão disponiveis
+          * Os valores do <datalist> que não forem compátiveis com o cmapo, não serão apresentados como sugestão
+ -->
+
+<form action="">
+  <input type="email" placeholder="Seu melhor Email" />
+  <input type="email" readonly value="Somente leitura" />
+  <input type="email" disabled value="Desabilitado" />
+  <!-- <input type="email" required value="Obrigatorio" /> -->
+  <input
+    type="email"
+    multiple
+    value="gabriel@gabriel.com, joao@joao.com, qualquer@dominio.com"
+  />
+  <input type="email" minlength="8" value="minimo8@caracteres.com" />
+  <input type="email" maxlength="255" value="maximo255@caracteres.com" />
+  <input type="email" size="8" minlength="8" value="tamanhoDoCampo@size.com" />
+  <input
+    type="email"
+    pattern=".+@rocketseat\.com\.br"
+    value="soAceitaDominios@rocketseat.com.b"
+    title="Somente email rocketseat.com.br serão aceitos"
+  />
+
+  <datalist id="email-list">
+    <option>gabriel@gabriel.com</option>
+  </datalist>
+
+  <input type="email" list="email-list" />
+
+  <button type="submit">Enviar</button>
+</form>

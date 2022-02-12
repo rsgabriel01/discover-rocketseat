@@ -1,0 +1,62 @@
+<!-- 
+  <input type="url">
+  
+  - Espera que o usuário digite uma URL
+  - Irá validar se o valor digitado é uma URL
+
+  # Atributos
+
+  - placeholder
+  - readonly / disable
+  - Value
+
+  - required
+
+  - minlength / maxlength
+    * o mínimo e máximo valor que o campo irá conter
+
+  - size
+    * Valor indicando quantos caracteres esse campo deveria conter, modificando o tamanho do campo para o usuário
+
+  - pattern
+    * Uso de espressão regular para validar o campo
+    * Exemplo: o usuário só poderá colcoar domínios .com.br
+      * pattern=".*\.com\.br\/.*"
+
+  - list
+    * O id de uma tag <datalist> que está no mesmo documento
+    * <datalist> irá conter uma lista de valores pré definidos a fim de sugerir ao usuário, quais valores estão disponiveis 
+      * Os valores <datalist> que não forem compatíveis com o campo não serão apresentados como sugestão
+
+  - spellcheck
+    * Habilitar a verificação ortográfica para este input
+
+ -->
+
+<datalist id="urlsdata">
+  <option>http://meusite.com.br</option>
+  <option>https://seusite.com.br</option>
+</datalist>
+
+<form action="">
+  <input type="url" />
+  <input type="url" placeholder="https://example.com" />
+  <input type="url" value="https://value.com" />
+  <input type="url" value="https://readonly.com" readonly />
+  <input type="url" placeholder="https://example.com" />
+  <input type="url" value="https://required.com" required />
+  <input type="url" value="https://minlength.com" minlength="10" />
+  <input type="url" value="https://maxlength.com" maxlength="255" />
+  <input type="url" value="https://size11.com" size="11" />
+  <input
+    type="url"
+    placeholder="https://pattern.com.br"
+    pattern=".*\.com\.br\.*"
+    title='Somente domínios ".com.br" serão aceitos'
+    required
+    list="urlsdata"
+    spellcheck="false"
+  />
+
+  <button type="submit">Enviar</button>
+</form>
