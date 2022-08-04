@@ -30,5 +30,6 @@ console.log(techs)
 let index = techs.indexOf('css')
 console.log(index)
 
+// Altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.
 techs.splice(index, 1)
 console.log(techs)
