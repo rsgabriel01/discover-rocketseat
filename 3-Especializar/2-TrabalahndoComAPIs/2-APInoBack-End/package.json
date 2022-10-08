@@ -1,0 +1,13 @@
+{
+  "name": "2-apinoback-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Gabriel Rodrigues Souza",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
